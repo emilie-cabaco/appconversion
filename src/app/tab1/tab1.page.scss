@@ -6,27 +6,31 @@ ion-item {
   text-align: center;
 }
 
-ion-label {
-  font-size: 5rem;
+
+#miles {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  font-size: 3vh;
+  text-align: center;
 }
 
 .wrapper {
   position: relative;
   width: 100%;
   height: 400px;
+  text-align: center;
 }
 
 h1 {
   font-size: 3rem;
   text-align: center;
-  
-}
-
-h2 {
-  position: absolute;
-  font-size: 5rem;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  font-size: 5rem;
+  position: absolute;
   transform: translate(-50%, -50%);
 }

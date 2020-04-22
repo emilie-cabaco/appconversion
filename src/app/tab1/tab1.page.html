@@ -13,16 +13,31 @@
     </ion-toolbar>
   </ion-header>
 
+<div id="km"> 
+  <ion-item>
+    <ion-label class="label" position="stacked">Indiquez la distance en km</ion-label>
+    <ion-input [(ngModel)]="km" (change)="conversionmiles()"></ion-input>
+  </ion-item>
+
   <ion-text color="tertiary">
     <div class="wrapper">
-      <h1>Distance en miles</h1>
-      <h2>121</h2>
+      <h1>{{resultatm}} miles</h1>
     </div>
   </ion-text>
+</div> 
 
+<div id="miles">
   <ion-item>
-    <ion-label class="label" position="stacked">Distance en km</ion-label>
-    <ion-input></ion-input>
+    <ion-label class="label" position="stacked">Indiquez la distance en miles</ion-label>
+    <ion-input [(ngModel)]="miles" (change)="conversionkm()"></ion-input>
   </ion-item>
+
+  <ion-text color="tertiary">
+    <div class="wrapper">
+      <h1>{{resultatkm}} Km</h1>
+    </div>
+  </ion-text>
+</div>
+
 
 </ion-content>

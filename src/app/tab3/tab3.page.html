@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Devise
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,35 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Devise</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<div id="euros"> 
+  <ion-item>
+    <ion-label class="label" position="stacked">Indiquez la somme en euros</ion-label>
+    <ion-input [(ngModel)]="euros" (change)="conversiondollars()"></ion-input>
+  </ion-item>
+
+  <ion-text color="success">
+    <div class="wrapper">
+      <h1>{{resultatd}} $</h1>
+    </div>
+  </ion-text>
+</div> 
+
+<div id="dollars">
+  <ion-item>
+    <ion-label class="label" position="stacked">Indiquez la somme en dollars</ion-label>
+    <ion-input [(ngModel)]="dollars" (change)="conversioneuros()"></ion-input>
+  </ion-item>
+
+  <ion-text color="success">
+    <div class="wrapper">
+      <h1>{{resultate}} €</h1>
+    </div>
+  </ion-text>
+</div>
+
+
 </ion-content>
