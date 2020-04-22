@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Taille
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Taille</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div id="cm"> 
+  <ion-item>
+    <ion-label class="label" position="stacked">Indiquez la taille en cm</ion-label>
+    <ion-input [(ngModel)]="cm" (change)="conversionpouces()"></ion-input>
+  </ion-item>
+
+  <ion-text color="secondary">
+    <div class="wrapper">
+      <h1>{{resultatp}} pouces</h1>
+    </div>
+  </ion-text>
+</div> 
+
+<div id="pouces">
+  <ion-item>
+    <ion-label class="label" position="stacked">Indiquez la taille en pouces</ion-label>
+    <ion-input [(ngModel)]="pouces" (change)="conversioncm()"></ion-input>
+  </ion-item>
+
+  <ion-text color="secondary">
+    <div class="wrapper">
+      <h1>{{resultatcm}} cm</h1>
+    </div>
+  </ion-text>
+</div>
+
+
+</ion-content>
